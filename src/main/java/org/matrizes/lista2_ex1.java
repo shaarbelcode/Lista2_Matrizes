@@ -1,0 +1,21 @@
+//Ler uma matriz 3x3 de números inteiros e mostrar a matriz na tela em
+//forma de tabela, uma linha embaixo da outra.
+
+package org.matrizes;
+public class lista2_ex1 {
+    public static void main(String[] args) {
+        int [][] matriz = new int [3][3];
+        for(int i = 0; i< matriz.length; i++){
+            for(int j = 0; j< matriz.length; j++){
+                matriz[i][j] = Integer.parseInt(IO.readln("Valor da posição ["+i+"]["+j+"]; "));
+            }
+        }
+        for(int[] linha : matriz){
+            for(int coluna : linha){
+                IO.print(coluna);
+            }
+            IO.println();
+        }
+    }
+
+}
